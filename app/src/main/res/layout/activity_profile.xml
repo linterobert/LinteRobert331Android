@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/image_background"
+    android:id="@+id/profileDrawerLayout">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#5A5A5A"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:elevation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="129dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="141dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="141dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="37dp"
+            android:text="Hello robertlinte"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:text="robertlinte@gmail.com"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="-10dp"
+                tools:layout_editor_absoluteY="201dp" />
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:text="0770230576"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                tools:layout_editor_absoluteX="-10dp"
+                tools:layout_editor_absoluteY="201dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_height_24"
+                android:drawableStart="@drawable/baseline_height_24"
+                android:textColor="@color/white"
+                android:text="Height: 180cm"
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="-10dp"
+                tools:layout_editor_absoluteY="201dp" />
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_accessibility_new_24"
+                android:drawableStart="@drawable/baseline_accessibility_new_24"
+                android:text="Weight: 70kg"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="-10dp"
+                tools:layout_editor_absoluteY="201dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="121dp"
+            android:drawableStart="@drawable/baseline_date_range_24"
+            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:text="Date: 23-Aug-2001"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="30dp"
+            android:text="Edit data"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age"
+            app:layout_constraintVertical_bias="0.307" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

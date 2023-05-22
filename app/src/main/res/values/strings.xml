@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Linte Robert 331</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ceva">ceva</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_client_map">ClientMapActivity</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="agree_to_terms">I agree to the terms and conditions.</string>
+    <string name="submit">Submit</string>
+    <string name="open_custom_dialog">Open Custom Dialog</string>
+    <string name="custom_dialog">Custom Dialog</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="info">My name is %1$s. I am %2$s years old. I have %3$s accepted the terms and conditions of this app.</string>
+</resources>

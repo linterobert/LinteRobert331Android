@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "382187408919",
+    "project_id": "gymproject-20b39",
+    "storage_bucket": "gymproject-20b39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382187408919:android:44c61865a53cf78100d652",
+        "android_client_info": {
+          "package_name": "com.example.linterobert331"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382187408919-9ro343f558kv4abgmdg8julbkph8c1ss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.linterobert331",
+            "certificate_hash": "00673d7525be0f1a89a3e2f84a0b9fb32dd509aa"
+          }
+        },
+        {
+          "client_id": "382187408919-lal9jfljcbj5eveb7u07matuo51anjkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVfzBmZoOYSxgNg61r76P7qylDRv4g4Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382187408919-71uk2jbctbdrvr579he4s81r8rq2mgcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
