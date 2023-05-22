@@ -57,12 +57,17 @@ class ProfileActivity : AppCompatActivity() {
                     auth.signOut()
                     startActivity(Intent(this, LoginActivity::class.java))
                 }
-
-
+                R.id.nav_shareLocation -> {
+                    val url = "https://www.youtube.com/watch?v=JZehdUU6VbQ"
+                    val intent = Intent(Intent.ACTION_SEND)
+                    intent.type = "text/plain"
+                    intent.putExtra("Share this profile", url)
+                    val chooser = Intent.createChooser(intent, "Share using...")
+                    startActivity(chooser)
+                }
             }
             true
         }
-
         var loginButton = findViewById<Button>(R.id.buttonEdit)
         loginButton.setOnClickListener{
             showCustomDialog();
